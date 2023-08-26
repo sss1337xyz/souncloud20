@@ -1,10 +1,9 @@
 import React from 'react';
 import {Breadcrumb, Layout} from "antd";
 
-import Sider from "3_widget/sider";
-import PlaylistTable from "5_entities/playlist/table";
-
-import TracksPlayer from "../../3_widget/tracks_player";
+import PlaylistTable from "entities/playlist/table";
+import Sider from "widget/sider";
+import TracksPlayer from "widget/tracks_player";
 
 const {Content} = Layout;
 

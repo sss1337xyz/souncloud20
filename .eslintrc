@@ -22,7 +22,7 @@
               // Packages `react` related.
               ["^react", "^@?\\w"],
               //
-              ["^(1_app|2_pages|3_widget|4_features|5_entities|6_shared)(/.*|$)"],
+              ["^(app|pages|widget|features|entities|shared)(/.*|$)"],
               // Parent imports. Put `..` last.
               ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
               // Other relative imports. Put same-folder imports and `.` last.

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Layout} from "antd";
 
-import Header from "3_widget/header";
+import Header from "widget/header";
 
 import {withProviders} from "./providers";
 import Routes from "./routes";
