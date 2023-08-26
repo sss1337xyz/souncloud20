@@ -1,8 +1,7 @@
 import React from 'react';
 
-import TrackPlayNextStop from "4_features/TrackPlayNextStop";
-
-import {api} from "../../6_shared/api";
+import TrackPlayNextStop from 'features/TrackPlayNextStop';
+import {api} from "shared/api";
 
 import * as S from './styles';
 

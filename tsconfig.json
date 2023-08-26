@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "target": "es5",
+    "baseUrl": ".",
+    "target": "ES2015",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -20,9 +19,21 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@cloudflare/workers-types"]
+    "types": [
+      "@cloudflare/workers-types"
+    ],
+    "paths": {
+      "app/*": ["src/1_app/*"],
+      "pages/*": ["src/2_pages/*"],
+      "widget/*": ["src/3_widget/*"],
+      "features/*": ["src/4_features/*"],
+      "entities/*": ["src/5_entities/*"],
+      "shared/*": ["src/6_shared/*"]
+    }
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["functions/**/*"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
