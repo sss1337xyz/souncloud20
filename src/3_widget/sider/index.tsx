@@ -1,12 +1,23 @@
 import React from 'react';
 import {Layout, Menu, MenuProps} from "antd";
+import {Link} from "react-router-dom";
 
 const { Sider: SiderComponent } = Layout;
 
 const itemsSider: MenuProps['items'] = [
     {
-        label: 'Library',
+        label:
+            <Link to="/">
+                Главная
+            </Link>,
         key: 1,
+    },
+    {
+        label:
+            <Link to="/collection">
+                Плейлист
+            </Link>,
+        key: 2,
     },
 ];
 const Sider = () => {
@@ -18,6 +29,7 @@ const Sider = () => {
                 defaultOpenKeys={['sub1']}
                 style={{ height: '100%', borderRight: 0 }}
                 items={itemsSider}
+                onClick={(e) => console.log(e.key)}
             />
         </SiderComponent>
     );

@@ -1,15 +1,25 @@
 import React from 'react';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 
 import Library from "pages/library";
-
-
+import Home from "pages/home";
+import Sider from "widget/sider";
+import RouterLayout from "app/routes/router_layout";
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <Library />,
-    },
+        element:  <RouterLayout/>,
+        children: [
+            {
+                path: "/",
+                element: <Home />,
+            },
+            {
+                path: "/collection",
+                element: <Library />,
+            },
+        ]
+    }
 ]);
 
 const Routes = () => {
