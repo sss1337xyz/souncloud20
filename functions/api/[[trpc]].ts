@@ -14,7 +14,7 @@ const publicProcedure = t.procedure;
 
 export const appRouter = t.router({
     greeting: publicProcedure.query(() => 'hello tRPC v10!'),
-    hello: publicProcedure.query(() => 'hello даун'),
+    hello: publicProcedure.query(() => 'hello'),
 });
 
 export type AppRouter = typeof appRouter;

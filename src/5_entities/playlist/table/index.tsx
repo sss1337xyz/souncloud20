@@ -57,7 +57,7 @@ const data: DataType[] = [
         name: 'John Brown',
         age: 32,
         address: 'New York No. 1 Lake Park',
-        tags: ['nice', 'developer'],
+        tags: ['поп панк', 'рок'],
     },
     {
         key: '2',
@@ -65,7 +65,7 @@ const data: DataType[] = [
         name: 'Jim Green',
         age: 42,
         address: 'London No. 1 Lake Park',
-        tags: ['loser'],
+        tags: ['меланхолия'],
     },
     {
         key: '3',
@@ -73,7 +73,7 @@ const data: DataType[] = [
         name: 'Joe Black',
         age: 32,
         address: 'Sydney No. 1 Lake Park',
-        tags: ['cool', 'teacher'],
+        tags: ['поп',],
     },
 ];
 
