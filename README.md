@@ -4,9 +4,13 @@ This project was bootstrapped with [Create React Index](https://github.com/faceb
 
 ## Available Scripts
 
+First of all, you need to install the dependencies
+
+### `yarn install`
+
 In the project directory, you can run:
 
-### `npm start`
+### `yarn dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
